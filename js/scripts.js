@@ -1,5 +1,5 @@
 // business logic
-//takes a number and html id (for an <ul>) and prints out list elements following the ping pong pattern
+//takes a number and html id (for a <ul> or <ol>) and appends list elements following the ping pong pattern
 var pingPong = function(number, output) {
   for (index = 1; index <= number; index++) {
     //temp variable that will be changed to string if criteria is met

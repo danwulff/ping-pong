@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a example of javascript use. This is an html/css/javascript website that takes a user input (number) and prints a list of values from 1 to the inputted number. However numbers divisible by 3 will print "ping", numbers divisible by 5 will print "pong" and numbers divisible by 15 will print "pingpong". The website can be seen at danwulff.github.com/io/ping-pong_
+_This is a example of javascript use. This is a simple html/css/javascript website that takes a user input (number) and prints a list of values from 1 to the inputted number. However numbers divisible by 3 will print "ping", numbers divisible by 5 will print "pong" and numbers divisible by 15 will print "pingpong". The website can be seen at danwulff.github.com/io/ping-pong_
 
 ## Setup/Installation Requirements
 

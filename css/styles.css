@@ -17,6 +17,12 @@ h3 {
   font-size: 18px;
 }
 
+.border {
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+}
+
 .header {
   padding: 24px;
   background-color: #F6E1AE;
