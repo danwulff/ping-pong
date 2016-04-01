@@ -16,3 +16,46 @@ h2 {
 h3 {
   font-size: 18px;
 }
+
+.header {
+  padding: 24px;
+  background-color: #F6E1AE;
+}
+
+.sidebar {
+  margin-top: 24px;
+  padding: 10px;
+  background-color: #7FC28B;
+}
+
+.sidebar h3 {
+  color: #F6E1AE;
+}
+
+.sidebar p {
+  color: #FFFFFF;
+}
+
+.content {
+  padding: 26px;
+  padding-top: 34px;
+}
+
+.content h3 {
+  font-weight: bold;
+}
+
+.main-content {
+  background-color: #E6E6E6;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+
+.main-content > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
