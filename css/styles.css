@@ -48,13 +48,14 @@ h3 {
 .main-content {
   background-color: #E6E6E6;
 
+  /*used to make main-content columns same length*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
   flex-wrap: wrap;
 }
-
+/*used to make main-content columns same length*/
 .main-content > [class*='col-'] {
   display: flex;
   flex-direction: column;
