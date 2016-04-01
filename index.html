@@ -10,18 +10,42 @@
   </head>
   <body>
     <div class="container">
-      <h1>Pig Latin Translator</h1>
-      <form id="input">
-        <div class="form-group">
-          <label for="sentence">Enter a sentence to be translated to pig latin:</label>
-          <input id="sentence" class="form-control" type="text"></input>
+      <!--Banner-->
+      <div class="row">
+        <h1>Ping-Pong</h1>
+      </div>
+      <div class="row">
+        <!--Left side column-->
+        <div class="col-sm-4">
+          <h2>About Ping Pong</h2>
+          <h3>Created by:</h3>
+          <p>Daniel Wulff</p>
+          <h3>GitHub Username/URL:</h3>
+          <p><a href="https://github.com/danwulff">danwulff</a></p>
+          <h3>Level 2 Test for:</h3>
+          <p>Java</p>
         </div>
-
-        <button type="submit" class="btn">Submit</button>
-      </form>
-
-      <div id="result">
-        <p><span class="sentence"></span><br><span class="pigSentence"></span></p>
+        <!--Main content-->
+        <div class="col-sm-8">
+          <h2>Let's Play</h2>
+          <h3>Rules:</h3>
+          <ol>
+            <li>Numbers divisble by 3 become "ping"</li>
+            <li>Numbers divisble by 5 become "pong"</li>
+            <li>Numbers divisble by 3 and 5 become "pingpong"</li>
+          </ol>
+          <form id="input">
+            <div class="input-group">
+              <span class="input-group-addon">Enter your number here:</span>
+              <input id="number" class="form-control" type="text"></input>
+              <span class="input-group-btn">
+                <button type="submit" class="btn">Ping Pong!</button>
+              </span>
+            </div>
+          </form>
+          <ul id="number-list">
+          </ul>
+        </div>
       </div>
     </div>
   </body>
