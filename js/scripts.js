@@ -1,6 +1,7 @@
 // business logic
-//takes a number and html id (for a <ul> or <ol>) and appends list elements following the ping pong pattern
-var pingPong = function(number, output) {
+//takes a number and creates an array of elements following the ping pong pattern
+var pingPong = function(number) {
+  var numbers = [];
   for (index = 1; index <= number; index++) {
     //temp variable that will be changed to string if criteria is met
     var temp = index;
@@ -16,11 +17,14 @@ var pingPong = function(number, output) {
     else if (temp % 3 === 0) {
       temp = "ping";
     }
-    //append list item
-    $(output).append("<li>" + temp + "</li>");
+    //push number
+    numbers.push(temp);
   }
+  return numbers;
 };
 
+
+// $(output).append("<li>" + temp + "</li>");
 
 // user interface logic
 $(document).ready(function(){
@@ -34,8 +38,12 @@ $(document).ready(function(){
     } else {
       //clear previous list
       $("#number-list").html("");
-      //call pingPong function
-      pingPong(number, "#number-list");
+      //call pingPong function and save to list array
+      var list = pingPong(number);
+      //for each list item, append into html list
+      list.forEach(function(item) {
+        $("#number-list").append("<li>" + item + "</li>");
+      });
     }
   });
 });
